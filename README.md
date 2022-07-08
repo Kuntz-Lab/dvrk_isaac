@@ -3,7 +3,21 @@ da Vinci Research Kit (dVRK) in Isaac Gym
 This repository has codes to run dVRK in Isaac Gym with deformable objects. It follows my ICRA 2022 paper: https://sites.google.com/view/deformernet/home.  
 
 # Installation and Documentation
-Carefully follow the official installation guide and documentation from Isaac Gym. You should be able to find the documentation on isaacgym/docs/index.html. Make sure you select NVIDIA GPU before running the examples.
+* Install Isaac Gym: Carefully follow the official installation guide and documentation from Isaac Gym. You should be able to find the documentation on isaacgym/docs/index.html. Make sure you select NVIDIA GPU before running the examples.
+* Set up:
+```sh
+# Step 1: Create a catkin workspace called dvrk_ws: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+
+# Step 2: Clone this repo into the src folder
+cd src
+git clone https://github.com/Utah-ARMLab/dvrk_isaac
+
+# Step 3: Clone other repos into the src folder:
+git clone https://github.com/eric-wieser/ros_numpy.git
+git clone https://github.com/gt-ros-pkg/hrl-kdl.git
+git clone https://baotruyenthach@bitbucket.org/robot-learning/point_cloud_segmentation.git
+```
+
 
 # Steps to launch the simulation
 ```sh
